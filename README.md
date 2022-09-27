@@ -6,8 +6,11 @@
 # Dependencies
 
 1- make
+
 2- cmake
+
 3- qt5-devel
+
 4- g++
 
 # compile
