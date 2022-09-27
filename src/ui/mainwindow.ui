@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>336</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>10000</width>
+    <height>10000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icons/org.gnome.Calculator.svg</normaloff>:/icons/org.gnome.Calculator.svg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="boton_del">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[clear]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(246, 97, 81);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(237, 51, 59);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_ce">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>90</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[clear all]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(246, 97, 81);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(237, 51, 59);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>CE</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Shift+Backspace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_plusMinus">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>X al cuadrado[Ctrl + C]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Tan</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[7]</string>
+    </property>
+    <property name="whatsThis">
+     <string extracomment="button[7]"/>
+    </property>
+    <property name="accessibleName">
+     <string extracomment="button[7]"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+    <property name="shortcut">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_parD">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>90</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Fin del bloque [Ctrl + )]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Cos</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>210</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[5]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="shortcut">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_8">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>150</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[8]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="shortcut">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_9">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>150</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[9]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+    <property name="shortcut">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>270</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[2]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="shortcut">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>270</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[3]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="shortcut">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_menos">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>150</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Restar [Ctrl + R]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+R</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[4]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="shortcut">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_div">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>210</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Dividir [Ctrl + D]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>÷</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_parI">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>270</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Inicio del bloque [Ctrl + (]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[1]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="shortcut">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_6">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>210</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[6]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+QPushBotton:pressed{
+	background-color: rgb(224, 27, 36);
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+    <property name="shortcut">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_multi">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>270</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Multiplicar [Ctrl + X]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_igual">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>330</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[equal]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(255, 163, 72);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(224, 151, 16);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_0">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[0]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="shortcut">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_punto">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>330</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Button[.]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(222, 221, 218);
+	color: rgb(0, 0, 0);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(192, 191, 188);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+    <property name="shortcut">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="line_ac">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>95</y>
+      <width>1</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(154, 153, 150);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_ac_c">
+    <property name="geometry">
+     <rect>
+      <x>74</x>
+      <y>90</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(246, 97, 81);
+	border:none;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="line_show_result">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>73</y>
+      <width>311</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 191, 188);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_mas">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Sumar [Ctrl + S]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	
+	
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+S</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_porcent">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>210</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ubuntu</family>
+      <pointsize>13</pointsize>
+      <weight>63</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>Raiz [Ctrl +Z ]</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 500 13pt &quot;Ubuntu&quot;;
+	background-color: rgb(119, 118, 123);
+	color: rgb(255, 255, 255);
+border-radius:20px;
+}
+
+QPushButton:hover{
+	background-color: rgb(94, 92, 100);
+}
+
+QPushBotton:pressed{
+
+	
+	color: rgb(27, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string> √</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Z</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="show_result">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ui_result">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:none;
+font: 500 12pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ui_operation">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Ubuntu&quot;;
+border:none;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="equal">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>19</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="line_op_result">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>311</width>
+      <height>1</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(192, 191, 188);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>boton_ce</zorder>
+   <zorder>boton_plusMinus</zorder>
+   <zorder>boton_7</zorder>
+   <zorder>boton_parD</zorder>
+   <zorder>boton_5</zorder>
+   <zorder>boton_8</zorder>
+   <zorder>boton_9</zorder>
+   <zorder>boton_2</zorder>
+   <zorder>boton_3</zorder>
+   <zorder>boton_menos</zorder>
+   <zorder>boton_4</zorder>
+   <zorder>boton_div</zorder>
+   <zorder>boton_parI</zorder>
+   <zorder>boton_1</zorder>
+   <zorder>boton_6</zorder>
+   <zorder>boton_multi</zorder>
+   <zorder>boton_igual</zorder>
+   <zorder>boton_0</zorder>
+   <zorder>boton_punto</zorder>
+   <zorder>boton_del</zorder>
+   <zorder>boton_ac_c</zorder>
+   <zorder>line_ac</zorder>
+   <zorder>boton_mas</zorder>
+   <zorder>boton_porcent</zorder>
+   <zorder>show_result</zorder>
+   <zorder>ui_result</zorder>
+   <zorder>ui_operation</zorder>
+   <zorder>equal</zorder>
+   <zorder>line_op_result</zorder>
+   <zorder>line_show_result</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
