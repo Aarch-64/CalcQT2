@@ -12,7 +12,7 @@ main code=C++
 
 ### -`make`
 
-### -`make`
+### -`cmake`
 
 ### -`qt5-devel`
 
