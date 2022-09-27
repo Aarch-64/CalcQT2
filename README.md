@@ -10,16 +10,16 @@ main code=C++
 
 # Dependencies
 
-###' 1- make'
+### `1- make`
 
-###2- cmake
+### `2- make`
 
-3- qt5-devel
+### `3- qt5-devel`
 
-4- g++
+### `4- g++`
 
 # compile
 
 to compile run
 
-$ sh make.sh
+### `$ sh make.sh`
