@@ -10,9 +10,9 @@ main code=C++
 
 # Dependencies
 
-1- make
+### 1- make
 
-2- cmake
+###2- cmake
 
 3- qt5-devel
 
